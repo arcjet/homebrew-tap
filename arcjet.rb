@@ -5,20 +5,20 @@
 class Arcjet < Formula
   desc "Arcjet CLI — manage Arcjet from the terminal"
   homepage "https://arcjet.com"
-  version "0.5.1-test"
+  version "0.5.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arcjet/cli/releases/download/v0.5.1-test/arcjet_0.5.1-test_darwin_amd64.tar.gz"
-      sha256 "1617ef75638768296bd2d5e258c57e2eb30d03447736a21b522326e17506fdc4"
+      url "https://github.com/arcjet/cli/releases/download/v0.5.2/arcjet_0.5.2_darwin_amd64.tar.gz"
+      sha256 "d39e4f2f201482b1423eeb22b2731fe8189429e6e4ddd005b3f5c8c2f01b227c"
 
       define_method(:install) do
         bin.install "arcjet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arcjet/cli/releases/download/v0.5.1-test/arcjet_0.5.1-test_darwin_arm64.tar.gz"
-      sha256 "7f89241b52f56a2d2a15716743d386363423688efa958e135938e39157062af5"
+      url "https://github.com/arcjet/cli/releases/download/v0.5.2/arcjet_0.5.2_darwin_arm64.tar.gz"
+      sha256 "806cc0dc873ecc1bca573eff464d2cd14c9a3dbbb09ef63365554a22c4f0bd48"
 
       define_method(:install) do
         bin.install "arcjet"
@@ -28,15 +28,15 @@ class Arcjet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arcjet/cli/releases/download/v0.5.1-test/arcjet_0.5.1-test_linux_amd64.tar.gz"
-      sha256 "bce7b491becbfecd28afea091b07261b53c4cef98e6a2016be1d0237f9f2e2c2"
+      url "https://github.com/arcjet/cli/releases/download/v0.5.2/arcjet_0.5.2_linux_amd64.tar.gz"
+      sha256 "2d27eeaa3d918b14989899d038ae0d67827e58e410921a4394540c2b2df13e17"
       define_method(:install) do
         bin.install "arcjet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arcjet/cli/releases/download/v0.5.1-test/arcjet_0.5.1-test_linux_arm64.tar.gz"
-      sha256 "b8074cbd45f12367cc4ad0934a7af0b86d481850a0853e24c62c03092fe49fbe"
+      url "https://github.com/arcjet/cli/releases/download/v0.5.2/arcjet_0.5.2_linux_arm64.tar.gz"
+      sha256 "a77cb667558d9fffb63275ff5126851277ee9156d89c92fc07cc70b7c467016e"
       define_method(:install) do
         bin.install "arcjet"
       end
