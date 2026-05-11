@@ -5,20 +5,20 @@
 class Arcjet < Formula
   desc "Arcjet CLI — manage Arcjet from the terminal"
   homepage "https://arcjet.com"
-  version "1.0.0"
+  version "1.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arcjet/cli/releases/download/v1.0.0/arcjet_1.0.0_darwin_amd64.tar.gz"
-      sha256 "68e00b8b88ae798b559ca989bf2794d00e31e0d6efa7fb12894a07daaa3fd8ba"
+      url "https://github.com/arcjet/cli/releases/download/v1.1.0/arcjet_1.1.0_darwin_amd64.tar.gz"
+      sha256 "a96fcc28fd4bb473adc843c1f9ec13bb780c306d2418e55d4652e0fbe2314cd4"
 
       define_method(:install) do
         bin.install "arcjet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arcjet/cli/releases/download/v1.0.0/arcjet_1.0.0_darwin_arm64.tar.gz"
-      sha256 "8fbc546db17e008d9fcfbfa827f7175e7c8f82cf4b0461b6ce7e8d4d35c1930e"
+      url "https://github.com/arcjet/cli/releases/download/v1.1.0/arcjet_1.1.0_darwin_arm64.tar.gz"
+      sha256 "8f8b28522eaede8e12ac8987a783acc2e437e768ac50e4e89bf81979b0e4cb3d"
 
       define_method(:install) do
         bin.install "arcjet"
@@ -28,15 +28,15 @@ class Arcjet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arcjet/cli/releases/download/v1.0.0/arcjet_1.0.0_linux_amd64.tar.gz"
-      sha256 "4a04f65b51474ad6e975db59f0bda5ee2b0841ddb4184730ee15e7a533093095"
+      url "https://github.com/arcjet/cli/releases/download/v1.1.0/arcjet_1.1.0_linux_amd64.tar.gz"
+      sha256 "0c83116ca591b51c0151de15ac3ebbf28207243414bb0d2bb5bb6c61a7f72931"
       define_method(:install) do
         bin.install "arcjet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arcjet/cli/releases/download/v1.0.0/arcjet_1.0.0_linux_arm64.tar.gz"
-      sha256 "70f4b43314831fb37950a0c13ea305d31f00c32772ea40604d0db91654cdab83"
+      url "https://github.com/arcjet/cli/releases/download/v1.1.0/arcjet_1.1.0_linux_arm64.tar.gz"
+      sha256 "bd6b9fe7f489c921e9a52a34c242f2266ab950695bfb11c597e67b1cb20f8843"
       define_method(:install) do
         bin.install "arcjet"
       end
